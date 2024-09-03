@@ -34,12 +34,12 @@ function startTimer(){
       }, 10);
       stopElmnt.disabled=false;
       startElm.disabled=true;
+      resetElmnt.disabled=false;
 }
 function stopTimer(){
     clearInterval(timerInterval);
     stopElmnt.disabled=true;
     startElm.disabled=false;
-
 }
 function resetTimer(){
     clearInterval(timerInterval);
@@ -48,7 +48,6 @@ function resetTimer(){
     resetElmnt.disabled=true;
     startElm.disabled=false;
 }
-
 
 startElm.addEventListener("click",startTimer);
 
